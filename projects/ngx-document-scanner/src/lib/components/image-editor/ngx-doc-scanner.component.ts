@@ -544,7 +544,7 @@ export class NgxDocScannerComponent implements OnInit {
       const dst = cv.imread(this.editedImage);
 
       switch (this.selectedFilter) {
-        case 'original':
+        case 'default':
           options.th = false;
           options.grayScale = false;
           options.blur = false;

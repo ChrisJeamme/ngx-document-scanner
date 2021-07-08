@@ -30,6 +30,10 @@ export class DemoComponent {
       position: 'absolute',
       top: 0,
       left: 0
+    },
+    maxImageDimensions: {
+      width: 4000,
+      height: 4000
     }
   };
 

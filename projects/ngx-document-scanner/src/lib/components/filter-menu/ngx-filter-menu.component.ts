@@ -9,14 +9,6 @@ import {MAT_BOTTOM_SHEET_DATA, MatBottomSheetRef} from '@angular/material/bottom
 export class NgxFilterMenuComponent {
   filterOptions: Array<EditorActionButton> = [
     {
-      name: 'default',
-      icon: 'filter_b_and_w',
-      action: (filter) => {
-        this.filterSelected.emit(filter);
-      },
-      text: 'B&W'
-    },
-    {
       name: 'bw2',
       icon: 'filter_b_and_w',
       action: (filter) => {
@@ -41,7 +33,7 @@ export class NgxFilterMenuComponent {
       text: 'Magic Color'
     },
     {
-      name: 'original',
+      name: 'default',
       icon: 'crop_original',
       action: (filter) => {
         this.filterSelected.emit(filter);
