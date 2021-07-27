@@ -15,6 +15,133 @@ import { MatListModule } from '@angular/material/list';
  * Generated from: lib/services/limits.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'angular2-draggable';
+import * as ɵngcc2 from '@angular/flex-layout/extended';
+import * as ɵngcc3 from '@angular/common';
+import * as ɵngcc4 from '@angular/material/bottom-sheet';
+import * as ɵngcc5 from '@angular/material/list';
+import * as ɵngcc6 from '@angular/material/icon';
+import * as ɵngcc7 from '@angular/flex-layout/flex';
+import * as ɵngcc8 from 'ngx-opencv';
+import * as ɵngcc9 from '@angular/material/button';
+
+function NgxFilterMenuComponent_button_1_mat_icon_6_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "mat-icon");
+    ɵngcc0.ɵɵtext(1, "done");
+    ɵngcc0.ɵɵelementEnd();
+} }
+function NgxFilterMenuComponent_button_1_Template(rf, ctx) { if (rf & 1) {
+    const _r4 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "button", 1);
+    ɵngcc0.ɵɵlistener("click", function NgxFilterMenuComponent_button_1_Template_button_click_0_listener() { const restoredCtx = ɵngcc0.ɵɵrestoreView(_r4); const option_r1 = restoredCtx.$implicit; const ctx_r3 = ɵngcc0.ɵɵnextContext(); return ctx_r3.selectOption(option_r1.name); });
+    ɵngcc0.ɵɵelementStart(1, "mat-icon");
+    ɵngcc0.ɵɵtext(2);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementStart(3, "span", 2);
+    ɵngcc0.ɵɵtext(4);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelement(5, "span", 3);
+    ɵngcc0.ɵɵtemplate(6, NgxFilterMenuComponent_button_1_mat_icon_6_Template, 2, 0, "mat-icon", 4);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    const option_r1 = ctx.$implicit;
+    const ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵtextInterpolate(option_r1.icon);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵtextInterpolate(option_r1.text);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵproperty("ngIf", option_r1.name === ctx_r0.data.filter);
+} }
+const _c0 = ["outline"];
+const _c1 = function (a0, a1) { return { width: a0, height: a1 }; };
+function NgxShapeOutlineComponent_canvas_0_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "canvas", 1, 2);
+} if (rf & 2) {
+    const ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("ngStyle", ɵngcc0.ɵɵpureFunction2(1, _c1, ctx_r0.dimensions.width + "px", ctx_r0.dimensions.height + "px"));
+} }
+const _c2 = ["PreviewCanvas"];
+const _c3 = function () { return { x: 0, y: 0 }; };
+const _c4 = function () { return ["top", "left"]; };
+const _c5 = function (a0) { return { x: a0, y: 0 }; };
+const _c6 = function () { return ["top", "right"]; };
+const _c7 = function (a1) { return { x: 0, y: a1 }; };
+const _c8 = function () { return ["bottom", "left"]; };
+const _c9 = function (a0, a1) { return { x: a0, y: a1 }; };
+const _c10 = function () { return ["bottom", "right"]; };
+function NgxDocScannerComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵelement(1, "ngx-shape-outine", 8, 9);
+    ɵngcc0.ɵɵelement(3, "ngx-draggable-point", 10, 11);
+    ɵngcc0.ɵɵelement(5, "ngx-draggable-point", 10, 12);
+    ɵngcc0.ɵɵelement(7, "ngx-draggable-point", 10, 13);
+    ɵngcc0.ɵɵelement(9, "ngx-draggable-point", 10, 14);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r1 = ɵngcc0.ɵɵnextContext();
+    const _r0 = ɵngcc0.ɵɵreference(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("color", ctx_r1.options.cropToolColor)("weight", ctx_r1.options.cropToolLineWeight)("dimensions", ctx_r1.previewDimensions);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵproperty("pointOptions", ctx_r1.options.pointOptions)("startPosition", ɵngcc0.ɵɵpureFunction0(19, _c3))("limitRoles", ɵngcc0.ɵɵpureFunction0(20, _c4))("container", _r0);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵproperty("pointOptions", ctx_r1.options.pointOptions)("startPosition", ɵngcc0.ɵɵpureFunction1(21, _c5, ctx_r1.previewDimensions.width))("limitRoles", ɵngcc0.ɵɵpureFunction0(23, _c6))("container", _r0);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵproperty("pointOptions", ctx_r1.options.pointOptions)("startPosition", ɵngcc0.ɵɵpureFunction1(24, _c7, ctx_r1.previewDimensions.height))("limitRoles", ɵngcc0.ɵɵpureFunction0(26, _c8))("container", _r0);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵproperty("pointOptions", ctx_r1.options.pointOptions)("startPosition", ɵngcc0.ɵɵpureFunction2(27, _c9, ctx_r1.previewDimensions.width, ctx_r1.previewDimensions.height))("limitRoles", ɵngcc0.ɵɵpureFunction0(30, _c10))("container", _r0);
+} }
+function NgxDocScannerComponent_ng_container_7_button_1_Template(rf, ctx) { if (rf & 1) {
+    const _r14 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "button", 18);
+    ɵngcc0.ɵɵlistener("click", function NgxDocScannerComponent_ng_container_7_button_1_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r14); const button_r9 = ɵngcc0.ɵɵnextContext().$implicit; return button_r9.action(); });
+    ɵngcc0.ɵɵelementStart(1, "mat-icon");
+    ɵngcc0.ɵɵtext(2);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    const button_r9 = ɵngcc0.ɵɵnextContext().$implicit;
+    const ctx_r10 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("name", button_r9.name)("color", ctx_r10.options.buttonThemeColor);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵtextInterpolate(button_r9.icon);
+} }
+function NgxDocScannerComponent_ng_container_7_button_2_Template(rf, ctx) { if (rf & 1) {
+    const _r18 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "button", 19);
+    ɵngcc0.ɵɵlistener("click", function NgxDocScannerComponent_ng_container_7_button_2_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r18); const button_r9 = ɵngcc0.ɵɵnextContext().$implicit; return button_r9.action(); });
+    ɵngcc0.ɵɵelementStart(1, "mat-icon");
+    ɵngcc0.ɵɵtext(2);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementStart(3, "span");
+    ɵngcc0.ɵɵtext(4);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    const button_r9 = ɵngcc0.ɵɵnextContext().$implicit;
+    const ctx_r11 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("name", button_r9.name)("color", ctx_r11.options.buttonThemeColor);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵtextInterpolate(button_r9.icon);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵtextInterpolate1("", button_r9.text, "}");
+} }
+function NgxDocScannerComponent_ng_container_7_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0, 15);
+    ɵngcc0.ɵɵtemplate(1, NgxDocScannerComponent_ng_container_7_button_1_Template, 3, 3, "button", 16);
+    ɵngcc0.ɵɵtemplate(2, NgxDocScannerComponent_ng_container_7_button_2_Template, 5, 4, "button", 17);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const button_r9 = ctx.$implicit;
+    ɵngcc0.ɵɵproperty("ngSwitch", button_r9.type);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngSwitchCase", "fab");
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngSwitchCase", "button");
+} }
+const _c11 = function (a0) { return { "max-width": a0 }; };
 class LimitsService {
     constructor() {
         this.limitDirections = ['left', 'right', 'top', 'bottom'];
@@ -277,14 +404,16 @@ class LimitsService {
         }[direction];
     }
 }
-LimitsService.decorators = [
-    { type: Injectable, args: [{
-                providedIn: 'root'
-            },] }
-];
+LimitsService.ɵfac = function LimitsService_Factory(t) { return new (t || LimitsService)(); };
 /** @nocollapse */
 LimitsService.ctorParameters = () => [];
 /** @nocollapse */ LimitsService.ɵprov = ɵɵdefineInjectable({ factory: function LimitsService_Factory() { return new LimitsService(); }, token: LimitsService, providedIn: "root" });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(LimitsService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
 if (false) {
     /**
      * @type {?}
@@ -555,12 +684,14 @@ class NgxDraggablePointComponent {
         return position;
     }
 }
-NgxDraggablePointComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'ngx-draggable-point',
-                template: "<div #point ngDraggable=\"draggable\"\n     (movingOffset)=\"positionChange($event)\"\n     [ngStyle]=\"pointStyle()\"\n     [position]=\"position\"\n     [bounds]=\"container\"\n     [inBounds]=\"true\"\n     (endOffset)=\"movementEnd($event)\"\n      style=\"z-index: 1000\">\n</div>\n"
-            }] }
-];
+NgxDraggablePointComponent.ɵfac = function NgxDraggablePointComponent_Factory(t) { return new (t || NgxDraggablePointComponent)(ɵngcc0.ɵɵdirectiveInject(LimitsService)); };
+NgxDraggablePointComponent.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: NgxDraggablePointComponent, selectors: [["ngx-draggable-point"]], inputs: { width: "width", height: "height", color: "color", shape: "shape", pointOptions: "pointOptions", _currentPosition: "_currentPosition", limitRoles: "limitRoles", startPosition: "startPosition", container: "container" }, decls: 2, vars: 4, consts: [["ngDraggable", "draggable", 2, "z-index", "1000", 3, "ngStyle", "position", "bounds", "inBounds", "movingOffset", "endOffset"], ["point", ""]], template: function NgxDraggablePointComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "div", 0, 1);
+        ɵngcc0.ɵɵlistener("movingOffset", function NgxDraggablePointComponent_Template_div_movingOffset_0_listener($event) { return ctx.positionChange($event); })("endOffset", function NgxDraggablePointComponent_Template_div_endOffset_0_listener($event) { return ctx.movementEnd($event); });
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("ngStyle", ctx.pointStyle())("position", ctx.position)("bounds", ctx.container)("inBounds", true);
+    } }, directives: [ɵngcc1.AngularDraggableDirective, ɵngcc2.DefaultStyleDirective, ɵngcc3.NgStyle], encapsulation: 2 });
 /** @nocollapse */
 NgxDraggablePointComponent.ctorParameters = () => [
     { type: LimitsService }
@@ -576,6 +707,31 @@ NgxDraggablePointComponent.propDecorators = {
     container: [{ type: Input }],
     _currentPosition: [{ type: Input }]
 };
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(NgxDraggablePointComponent, [{
+        type: Component,
+        args: [{
+                selector: 'ngx-draggable-point',
+                template: "<div #point ngDraggable=\"draggable\"\n     (movingOffset)=\"positionChange($event)\"\n     [ngStyle]=\"pointStyle()\"\n     [position]=\"position\"\n     [bounds]=\"container\"\n     [inBounds]=\"true\"\n     (endOffset)=\"movementEnd($event)\"\n      style=\"z-index: 1000\">\n</div>\n"
+            }]
+    }], function () { return [{ type: LimitsService }]; }, { width: [{
+            type: Input
+        }], height: [{
+            type: Input
+        }], color: [{
+            type: Input
+        }], shape: [{
+            type: Input
+        }], pointOptions: [{
+            type: Input
+        }], _currentPosition: [{
+            type: Input
+        }], limitRoles: [{
+            type: Input
+        }], startPosition: [{
+            type: Input
+        }], container: [{
+            type: Input
+        }] }); })();
 if (false) {
     /** @type {?} */
     NgxDraggablePointComponent.prototype.width;
@@ -700,12 +856,15 @@ class NgxFilterMenuComponent {
         this.bottomSheetRef.dismiss();
     }
 }
-NgxFilterMenuComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'ngx-filter-menu',
-                template: "<mat-action-list>\n  <button mat-list-item *ngFor=\"let option of filterOptions\" (click)=\"selectOption(option.name)\">\n    <mat-icon>{{option.icon}}</mat-icon>\n    <span fxFlex=\"100\" style=\"text-align: start; margin: 5px\">{{option.text}}</span>\n    <span fxFlex=\"100\"></span>\n    <mat-icon *ngIf=\"option.name === data.filter\">done</mat-icon>\n  </button>\n</mat-action-list>\n"
-            }] }
-];
+NgxFilterMenuComponent.ɵfac = function NgxFilterMenuComponent_Factory(t) { return new (t || NgxFilterMenuComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc4.MatBottomSheetRef), ɵngcc0.ɵɵdirectiveInject(MAT_BOTTOM_SHEET_DATA)); };
+NgxFilterMenuComponent.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: NgxFilterMenuComponent, selectors: [["ngx-filter-menu"]], outputs: { filterSelected: "filterSelected" }, decls: 2, vars: 1, consts: [["mat-list-item", "", 3, "click", 4, "ngFor", "ngForOf"], ["mat-list-item", "", 3, "click"], ["fxFlex", "100", 2, "text-align", "start", "margin", "5px"], ["fxFlex", "100"], [4, "ngIf"]], template: function NgxFilterMenuComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "mat-action-list");
+        ɵngcc0.ɵɵtemplate(1, NgxFilterMenuComponent_button_1_Template, 7, 3, "button", 0);
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngForOf", ctx.filterOptions);
+    } }, directives: [ɵngcc5.MatList, ɵngcc3.NgForOf, ɵngcc5.MatListItem, ɵngcc6.MatIcon, ɵngcc7.DefaultFlexDirective, ɵngcc3.NgIf], encapsulation: 2 });
 /** @nocollapse */
 NgxFilterMenuComponent.ctorParameters = () => [
     { type: MatBottomSheetRef },
@@ -714,6 +873,18 @@ NgxFilterMenuComponent.ctorParameters = () => [
 NgxFilterMenuComponent.propDecorators = {
     filterSelected: [{ type: Output }]
 };
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(NgxFilterMenuComponent, [{
+        type: Component,
+        args: [{
+                selector: 'ngx-filter-menu',
+                template: "<mat-action-list>\n  <button mat-list-item *ngFor=\"let option of filterOptions\" (click)=\"selectOption(option.name)\">\n    <mat-icon>{{option.icon}}</mat-icon>\n    <span fxFlex=\"100\" style=\"text-align: start; margin: 5px\">{{option.text}}</span>\n    <span fxFlex=\"100\"></span>\n    <mat-icon *ngIf=\"option.name === data.filter\">done</mat-icon>\n  </button>\n</mat-action-list>\n"
+            }]
+    }], function () { return [{ type: ɵngcc4.MatBottomSheetRef }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [MAT_BOTTOM_SHEET_DATA]
+            }] }]; }, { filterSelected: [{
+            type: Output
+        }] }); })();
 if (false) {
     /** @type {?} */
     NgxFilterMenuComponent.prototype.filterOptions;
@@ -862,12 +1033,17 @@ class NgxShapeOutlineComponent {
         ctx.stroke();
     }
 }
-NgxShapeOutlineComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'ngx-shape-outine',
-                template: "<canvas #outline\n        style=\"position: absolute; z-index: 1000\"\n        [ngStyle]=\"{width: dimensions.width + 'px', height: dimensions.height + 'px'}\"\n        *ngIf=\"dimensions\">\n</canvas>\n"
-            }] }
-];
+NgxShapeOutlineComponent.ɵfac = function NgxShapeOutlineComponent_Factory(t) { return new (t || NgxShapeOutlineComponent)(ɵngcc0.ɵɵdirectiveInject(LimitsService)); };
+NgxShapeOutlineComponent.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: NgxShapeOutlineComponent, selectors: [["ngx-shape-outine"]], viewQuery: function NgxShapeOutlineComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(_c0, 5);
+    } if (rf & 2) {
+        let _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.canvas = _t.first);
+    } }, inputs: { color: "color", weight: "weight", dimensions: "dimensions" }, decls: 1, vars: 1, consts: [["style", "position: absolute; z-index: 1000", 3, "ngStyle", 4, "ngIf"], [2, "position", "absolute", "z-index", "1000", 3, "ngStyle"], ["outline", ""]], template: function NgxShapeOutlineComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵtemplate(0, NgxShapeOutlineComponent_canvas_0_Template, 2, 4, "canvas", 0);
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("ngIf", ctx.dimensions);
+    } }, directives: [ɵngcc3.NgIf, ɵngcc2.DefaultStyleDirective, ɵngcc3.NgStyle], encapsulation: 2 });
 /** @nocollapse */
 NgxShapeOutlineComponent.ctorParameters = () => [
     { type: LimitsService }
@@ -878,6 +1054,22 @@ NgxShapeOutlineComponent.propDecorators = {
     dimensions: [{ type: Input }],
     canvas: [{ type: ViewChild, args: ['outline',] }]
 };
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(NgxShapeOutlineComponent, [{
+        type: Component,
+        args: [{
+                selector: 'ngx-shape-outine',
+                template: "<canvas #outline\n        style=\"position: absolute; z-index: 1000\"\n        [ngStyle]=\"{width: dimensions.width + 'px', height: dimensions.height + 'px'}\"\n        *ngIf=\"dimensions\">\n</canvas>\n"
+            }]
+    }], function () { return [{ type: LimitsService }]; }, { color: [{
+            type: Input
+        }], weight: [{
+            type: Input
+        }], dimensions: [{
+            type: Input
+        }], canvas: [{
+            type: ViewChild,
+            args: ['outline']
+        }] }); })();
 if (false) {
     /** @type {?} */
     NgxShapeOutlineComponent.prototype.color;
@@ -1749,13 +1941,33 @@ class NgxDocScannerComponent {
         }));
     }
 }
-NgxDocScannerComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'ngx-doc-scanner',
-                template: "<div [ngStyle]=\"editorStyle\" fxLayoutAlign=\"space-around\" style=\"direction: ltr !important\">\n  <div #imageContainer [ngStyle]=\"imageDivStyle\" style=\"margin: auto;\" >\n    <ng-container *ngIf=\"imageLoaded && mode === 'crop'\">\n      <ngx-shape-outine #shapeOutline [color]=\"options.cropToolColor\" [weight]=\"options.cropToolLineWeight\" [dimensions]=\"previewDimensions\"></ngx-shape-outine>\n      <ngx-draggable-point #topLeft [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: 0, y: 0}\" [limitRoles]=\"['top', 'left']\" [container]=\"imageContainer\"></ngx-draggable-point>\n      <ngx-draggable-point #topRight [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: previewDimensions.width, y: 0}\" [limitRoles]=\"['top', 'right']\" [container]=\"imageContainer\"></ngx-draggable-point>\n      <ngx-draggable-point #bottomLeft [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: 0, y: previewDimensions.height}\" [limitRoles]=\"['bottom', 'left']\" [container]=\"imageContainer\"></ngx-draggable-point>\n      <ngx-draggable-point #bottomRight [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: previewDimensions.width, y: previewDimensions.height}\" [limitRoles]=\"['bottom', 'right']\" [container]=\"imageContainer\"></ngx-draggable-point>\n    </ng-container>\n    <canvas #PreviewCanvas [ngStyle]=\"{'max-width': options.maxPreviewWidth}\" style=\"z-index: 5\" ></canvas>\n  </div>\n  <div class=\"editor-actions\" fxLayout=\"row\" fxLayoutAlign=\"space-around\" style=\"position: absolute; bottom: 0; width: 100vw\">\n    <ng-container *ngFor=\"let button of displayedButtons\" [ngSwitch]=\"button.type\">\n      <button mat-mini-fab *ngSwitchCase=\"'fab'\" [name]=\"button.name\" (click)=\"button.action()\" [color]=\"options.buttonThemeColor\">\n        <mat-icon>{{button.icon}}</mat-icon>\n      </button>\n      <button mat-raised-button *ngSwitchCase=\"'button'\" [name]=\"button.name\" (click)=\"button.action()\" [color]=\"options.buttonThemeColor\">\n        <mat-icon>{{button.icon}}</mat-icon>\n        <span>{{button.text}}}</span>\n      </button>\n    </ng-container>\n  </div>\n</div>\n\n\n",
-                styles: [".editor-actions{padding:12px}.editor-actions button{margin:5px}"]
-            }] }
-];
+NgxDocScannerComponent.ɵfac = function NgxDocScannerComponent_Factory(t) { return new (t || NgxDocScannerComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc8.NgxOpenCVService), ɵngcc0.ɵɵdirectiveInject(LimitsService), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.MatBottomSheet)); };
+NgxDocScannerComponent.ɵcmp = /*@__PURE__*/ ɵngcc0.ɵɵdefineComponent({ type: NgxDocScannerComponent, selectors: [["ngx-doc-scanner"]], viewQuery: function NgxDocScannerComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(_c2, 5, ElementRef);
+    } if (rf & 2) {
+        let _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.previewCanvas = _t.first);
+    } }, inputs: { file: "file", config: "config" }, outputs: { exitEditor: "exitEditor", editResult: "editResult", error: "error", ready: "ready", processing: "processing" }, decls: 8, vars: 7, consts: [["fxLayoutAlign", "space-around", 2, "direction", "ltr !important", 3, "ngStyle"], [2, "margin", "auto", 3, "ngStyle"], ["imageContainer", ""], [4, "ngIf"], [2, "z-index", "5", 3, "ngStyle"], ["PreviewCanvas", ""], ["fxLayout", "row", "fxLayoutAlign", "space-around", 1, "editor-actions", 2, "position", "absolute", "bottom", "0", "width", "100vw"], [3, "ngSwitch", 4, "ngFor", "ngForOf"], [3, "color", "weight", "dimensions"], ["shapeOutline", ""], [3, "pointOptions", "startPosition", "limitRoles", "container"], ["topLeft", ""], ["topRight", ""], ["bottomLeft", ""], ["bottomRight", ""], [3, "ngSwitch"], ["mat-mini-fab", "", 3, "name", "color", "click", 4, "ngSwitchCase"], ["mat-raised-button", "", 3, "name", "color", "click", 4, "ngSwitchCase"], ["mat-mini-fab", "", 3, "name", "color", "click"], ["mat-raised-button", "", 3, "name", "color", "click"]], template: function NgxDocScannerComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵelementStart(1, "div", 1, 2);
+        ɵngcc0.ɵɵtemplate(3, NgxDocScannerComponent_ng_container_3_Template, 11, 31, "ng-container", 3);
+        ɵngcc0.ɵɵelement(4, "canvas", 4, 5);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementStart(6, "div", 6);
+        ɵngcc0.ɵɵtemplate(7, NgxDocScannerComponent_ng_container_7_Template, 3, 3, "ng-container", 7);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("ngStyle", ctx.editorStyle);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngStyle", ctx.imageDivStyle);
+        ɵngcc0.ɵɵadvance(2);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.imageLoaded && ctx.mode === "crop");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngStyle", ɵngcc0.ɵɵpureFunction1(5, _c11, ctx.options.maxPreviewWidth));
+        ɵngcc0.ɵɵadvance(3);
+        ɵngcc0.ɵɵproperty("ngForOf", ctx.displayedButtons);
+    } }, directives: [ɵngcc7.DefaultLayoutAlignDirective, ɵngcc2.DefaultStyleDirective, ɵngcc3.NgStyle, ɵngcc3.NgIf, ɵngcc7.DefaultLayoutDirective, ɵngcc3.NgForOf, NgxShapeOutlineComponent, NgxDraggablePointComponent, ɵngcc3.NgSwitch, ɵngcc3.NgSwitchCase, ɵngcc9.MatButton, ɵngcc6.MatIcon], styles: [".editor-actions[_ngcontent-%COMP%]{padding:12px}.editor-actions[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:5px}"] });
 /** @nocollapse */
 NgxDocScannerComponent.ctorParameters = () => [
     { type: NgxOpenCVService },
@@ -1772,6 +1984,31 @@ NgxDocScannerComponent.propDecorators = {
     file: [{ type: Input }],
     config: [{ type: Input }]
 };
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(NgxDocScannerComponent, [{
+        type: Component,
+        args: [{
+                selector: 'ngx-doc-scanner',
+                template: "<div [ngStyle]=\"editorStyle\" fxLayoutAlign=\"space-around\" style=\"direction: ltr !important\">\n  <div #imageContainer [ngStyle]=\"imageDivStyle\" style=\"margin: auto;\" >\n    <ng-container *ngIf=\"imageLoaded && mode === 'crop'\">\n      <ngx-shape-outine #shapeOutline [color]=\"options.cropToolColor\" [weight]=\"options.cropToolLineWeight\" [dimensions]=\"previewDimensions\"></ngx-shape-outine>\n      <ngx-draggable-point #topLeft [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: 0, y: 0}\" [limitRoles]=\"['top', 'left']\" [container]=\"imageContainer\"></ngx-draggable-point>\n      <ngx-draggable-point #topRight [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: previewDimensions.width, y: 0}\" [limitRoles]=\"['top', 'right']\" [container]=\"imageContainer\"></ngx-draggable-point>\n      <ngx-draggable-point #bottomLeft [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: 0, y: previewDimensions.height}\" [limitRoles]=\"['bottom', 'left']\" [container]=\"imageContainer\"></ngx-draggable-point>\n      <ngx-draggable-point #bottomRight [pointOptions]=\"options.pointOptions\" [startPosition]=\"{x: previewDimensions.width, y: previewDimensions.height}\" [limitRoles]=\"['bottom', 'right']\" [container]=\"imageContainer\"></ngx-draggable-point>\n    </ng-container>\n    <canvas #PreviewCanvas [ngStyle]=\"{'max-width': options.maxPreviewWidth}\" style=\"z-index: 5\" ></canvas>\n  </div>\n  <div class=\"editor-actions\" fxLayout=\"row\" fxLayoutAlign=\"space-around\" style=\"position: absolute; bottom: 0; width: 100vw\">\n    <ng-container *ngFor=\"let button of displayedButtons\" [ngSwitch]=\"button.type\">\n      <button mat-mini-fab *ngSwitchCase=\"'fab'\" [name]=\"button.name\" (click)=\"button.action()\" [color]=\"options.buttonThemeColor\">\n        <mat-icon>{{button.icon}}</mat-icon>\n      </button>\n      <button mat-raised-button *ngSwitchCase=\"'button'\" [name]=\"button.name\" (click)=\"button.action()\" [color]=\"options.buttonThemeColor\">\n        <mat-icon>{{button.icon}}</mat-icon>\n        <span>{{button.text}}}</span>\n      </button>\n    </ng-container>\n  </div>\n</div>\n\n\n",
+                styles: [".editor-actions{padding:12px}.editor-actions button{margin:5px}"]
+            }]
+    }], function () { return [{ type: ɵngcc8.NgxOpenCVService }, { type: LimitsService }, { type: ɵngcc4.MatBottomSheet }]; }, { exitEditor: [{
+            type: Output
+        }], editResult: [{
+            type: Output
+        }], error: [{
+            type: Output
+        }], ready: [{
+            type: Output
+        }], processing: [{
+            type: Output
+        }], file: [{
+            type: Input
+        }], previewCanvas: [{
+            type: ViewChild,
+            args: ['PreviewCanvas', { read: ElementRef }]
+        }], config: [{
+            type: Input
+        }] }); })();
 if (false) {
     /**
      * editor config object
@@ -2088,8 +2325,29 @@ class NgxDocumentScannerModule {
         };
     }
 }
-NgxDocumentScannerModule.decorators = [
-    { type: NgModule, args: [{
+NgxDocumentScannerModule.ɵfac = function NgxDocumentScannerModule_Factory(t) { return new (t || NgxDocumentScannerModule)(); };
+NgxDocumentScannerModule.ɵmod = /*@__PURE__*/ ɵngcc0.ɵɵdefineNgModule({ type: NgxDocumentScannerModule });
+NgxDocumentScannerModule.ɵinj = /*@__PURE__*/ ɵngcc0.ɵɵdefineInjector({ providers: [
+        NgxOpenCVService,
+        LimitsService,
+    ], imports: [[
+            FlexLayoutModule,
+            MatButtonModule,
+            MatIconModule,
+            MatBottomSheetModule,
+            MatListModule,
+            AngularDraggableModule,
+            CommonModule,
+            NgxOpenCVModule,
+        ], FlexLayoutModule,
+        MatButtonModule,
+        MatIconModule,
+        MatBottomSheetModule,
+        MatListModule,
+        AngularDraggableModule] });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && ɵngcc0.ɵsetClassMetadata(NgxDocumentScannerModule, [{
+        type: NgModule,
+        args: [{
                 declarations: [
                     NgxDraggablePointComponent,
                     NgxFilterMenuComponent,
@@ -2122,8 +2380,21 @@ NgxDocumentScannerModule.decorators = [
                     NgxOpenCVService,
                     LimitsService,
                 ]
-            },] }
-];
+            }]
+    }], null, null); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NgxDocumentScannerModule, { declarations: function () { return [NgxDraggablePointComponent, NgxFilterMenuComponent, NgxShapeOutlineComponent, NgxDocScannerComponent]; }, imports: function () { return [FlexLayoutModule,
+        MatButtonModule,
+        MatIconModule,
+        MatBottomSheetModule,
+        MatListModule,
+        AngularDraggableModule,
+        CommonModule,
+        NgxOpenCVModule]; }, exports: function () { return [FlexLayoutModule,
+        MatButtonModule,
+        MatIconModule,
+        MatBottomSheetModule,
+        MatListModule,
+        AngularDraggableModule, NgxDocScannerComponent]; } }); })();
 
 /**
  * @fileoverview added by tsickle
@@ -2252,4 +2523,6 @@ if (false) {
  */
 
 export { NgxDocScannerComponent, NgxDocumentScannerModule, NgxDraggablePointComponent as ɵa, LimitsService as ɵb, NgxFilterMenuComponent as ɵc, NgxShapeOutlineComponent as ɵd };
+
+
 //# sourceMappingURL=ngx-document-scanner.js.map
