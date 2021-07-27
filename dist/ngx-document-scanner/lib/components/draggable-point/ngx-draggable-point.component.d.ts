@@ -1,7 +1,6 @@
 import { AfterViewInit } from '@angular/core';
 import { LimitsService } from '../../services/limits.service';
 import { XYPosition } from '../../PrivateModels';
-import * as ɵngcc0 from '@angular/core';
 export declare class NgxDraggablePointComponent implements AfterViewInit {
     private limitsService;
     width: number;
@@ -55,8 +54,4 @@ export declare class NgxDraggablePointComponent implements AfterViewInit {
      * returns a new point position if the movement exceeded the pane limit
      */
     private enforcePaneLimits;
-    static ɵfac: ɵngcc0.ɵɵFactoryDeclaration<NgxDraggablePointComponent, never>;
-    static ɵcmp: ɵngcc0.ɵɵComponentDeclaration<NgxDraggablePointComponent, "ngx-draggable-point", never, { "width": "width"; "height": "height"; "color": "color"; "shape": "shape"; "pointOptions": "pointOptions"; "_currentPosition": "_currentPosition"; "limitRoles": "limitRoles"; "startPosition": "startPosition"; "container": "container"; }, {}, never, never>;
 }
-
-//# sourceMappingURL=ngx-draggable-point.component.d.ts.map

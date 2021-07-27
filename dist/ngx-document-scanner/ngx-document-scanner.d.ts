@@ -6,5 +6,3 @@ export { NgxDraggablePointComponent as ɵa } from './lib/components/draggable-po
 export { NgxFilterMenuComponent as ɵc } from './lib/components/filter-menu/ngx-filter-menu.component';
 export { NgxShapeOutlineComponent as ɵd } from './lib/components/shape-outline/ngx-shape-outline.component';
 export { LimitsService as ɵb } from './lib/services/limits.service';
-
-//# sourceMappingURL=ngx-document-scanner.d.ts.map

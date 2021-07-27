@@ -2,7 +2,7 @@
 <ngx-doc-scanner *ngIf="image"
                  [file]="image"
                  (editResult)="editResult($event)"
-                 (exitEditor)="exitEditor()"
+                 (exitEditor)="exitEditor($event)"
                  (error)="onError($event)"
                  (processing)="editorState($event)"
                  [config]="config">
