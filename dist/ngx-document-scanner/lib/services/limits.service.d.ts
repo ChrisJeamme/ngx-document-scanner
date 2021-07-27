@@ -1,6 +1,7 @@
 import { BehaviorSubject } from 'rxjs';
 import { ImageDimensions } from '../PublicModels';
 import { LimitException, XYPosition } from '../PrivateModels';
+import * as i0 from "@angular/core";
 export declare class LimitsService {
     private limitDirections;
     /**
@@ -63,6 +64,8 @@ export declare class LimitsService {
      */
     compareArray(array1: Array<string>, array2: Array<string>): boolean;
     private getDirectionAxis;
+    static ɵfac: i0.ɵɵFactoryDeclaration<LimitsService, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<LimitsService>;
 }
 export interface PointPositionChange {
     x: number;
