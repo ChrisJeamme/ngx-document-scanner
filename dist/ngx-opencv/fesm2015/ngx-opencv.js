@@ -7,6 +7,7 @@ import { BehaviorSubject } from 'rxjs';
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
+import * as ɵngcc0 from '@angular/core';
 const OpenCvConfigToken = new InjectionToken('OpenCV config object token');
 class NgxOpenCVService {
     /**
@@ -122,17 +123,22 @@ class NgxOpenCVService {
         };
     }
 }
-NgxOpenCVService.decorators = [
-    { type: Injectable, args: [{
-                providedIn: 'root'
-            },] }
-];
+NgxOpenCVService.ɵfac = function NgxOpenCVService_Factory(t) { return new (t || NgxOpenCVService)(ɵngcc0.ɵɵinject(OpenCvConfigToken), ɵngcc0.ɵɵinject(ɵngcc0.NgZone)); };
 /** @nocollapse */
 NgxOpenCVService.ctorParameters = () => [
     { type: undefined, decorators: [{ type: Inject, args: [OpenCvConfigToken,] }] },
     { type: NgZone }
 ];
 /** @nocollapse */ NgxOpenCVService.ɵprov = ɵɵdefineInjectable({ factory: function NgxOpenCVService_Factory() { return new NgxOpenCVService(ɵɵinject(OpenCvConfigToken), ɵɵinject(NgZone)); }, token: NgxOpenCVService, providedIn: "root" });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NgxOpenCVService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [OpenCvConfigToken]
+            }] }, { type: ɵngcc0.NgZone }]; }, null); })();
 if (false) {
     /** @type {?} */
     NgxOpenCVService.prototype.cvState;
@@ -177,13 +183,16 @@ class NgxOpenCVModule {
         };
     }
 }
-NgxOpenCVModule.decorators = [
-    { type: NgModule, args: [{
+NgxOpenCVModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NgxOpenCVModule });
+NgxOpenCVModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NgxOpenCVModule_Factory(t) { return new (t || NgxOpenCVModule)(); }, providers: [NgxOpenCVService] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NgxOpenCVModule, [{
+        type: NgModule,
+        args: [{
                 declarations: [],
                 exports: [],
                 providers: [NgxOpenCVService]
-            },] }
-];
+            }]
+    }], null, null); })();
 /** @type {?} */
 const a = 0;
 
@@ -241,4 +250,6 @@ if (false) {
  */
 
 export { NgxOpenCVModule, NgxOpenCVService, OpenCvConfigToken };
+
+
 //# sourceMappingURL=ngx-opencv.js.map
