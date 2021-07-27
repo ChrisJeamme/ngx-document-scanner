@@ -13,7 +13,7 @@
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ngx-document-scanner/tsconfig.lib.json",
-            "project": "projects/ngx-document-scanner/ng-package.json"
+            "project": "projects/ngx-document-scanner/ng-package.json",
           }
         },
         "test": {
