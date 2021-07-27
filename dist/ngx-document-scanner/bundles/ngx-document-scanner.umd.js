@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('angular2-draggable'), require('@angular/flex-layout/extended'), require('@angular/common'), require('@angular/material/bottom-sheet'), require('@angular/material/list'), require('@angular/material/icon'), require('@angular/flex-layout/flex'), require('ngx-opencv'), require('@angular/material/button'), require('@angular/flex-layout')) :
-    typeof define === 'function' && define.amd ? define('ngx-document-scanner', ['exports', '@angular/core', 'rxjs', 'angular2-draggable', '@angular/flex-layout/extended', '@angular/common', '@angular/material/bottom-sheet', '@angular/material/list', '@angular/material/icon', '@angular/flex-layout/flex', 'ngx-opencv', '@angular/material/button', '@angular/flex-layout'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ngx-document-scanner'] = {}, global.ng.core, global.rxjs, global.i2, global.ng.flexLayout.extended, global.ng.common, global.ng.material.bottomSheet, global.ng.material.list, global.ng.material.icon, global.ng.flexLayout.flex, global.i1$1, global.ng.material.button, global.ng.flexLayout));
-}(this, (function (exports, i0, rxjs, i2, i3, i6, i1, i2$1, i4, i4$1, i1$1, i9, flexLayout) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('@angular/material/bottom-sheet'), require('ngx-opencv'), require('@angular/flex-layout'), require('angular2-draggable'), require('@angular/common'), require('@angular/material/button'), require('@angular/material/icon'), require('@angular/material/list')) :
+    typeof define === 'function' && define.amd ? define('ngx-document-scanner', ['exports', '@angular/core', 'rxjs', '@angular/material/bottom-sheet', 'ngx-opencv', '@angular/flex-layout', 'angular2-draggable', '@angular/common', '@angular/material/button', '@angular/material/icon', '@angular/material/list'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ngx-document-scanner'] = {}, global.ng.core, global.rxjs, global.ng.material.bottomSheet, global.i1$1, global.ng.flexLayout, global.angular2Draggable, global.ng.common, global.ng.material.button, global.ng.material.icon, global.ng.material.list));
+}(this, (function (exports, i0, rxjs, i1, i1$1, flexLayout, angular2Draggable, common, button, icon, list) { 'use strict';
 
     function _interopNamespace(e) {
         if (e && e.__esModule) return e;
@@ -25,15 +25,8 @@
     }
 
     var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
-    var i2__namespace = /*#__PURE__*/_interopNamespace(i2);
-    var i3__namespace = /*#__PURE__*/_interopNamespace(i3);
-    var i6__namespace = /*#__PURE__*/_interopNamespace(i6);
     var i1__namespace = /*#__PURE__*/_interopNamespace(i1);
-    var i2__namespace$1 = /*#__PURE__*/_interopNamespace(i2$1);
-    var i4__namespace = /*#__PURE__*/_interopNamespace(i4);
-    var i4__namespace$1 = /*#__PURE__*/_interopNamespace(i4$1);
     var i1__namespace$1 = /*#__PURE__*/_interopNamespace(i1$1);
-    var i9__namespace = /*#__PURE__*/_interopNamespace(i9);
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation.
@@ -724,7 +717,7 @@
             if (rf & 2) {
                 i0__namespace.ɵɵproperty("ngStyle", ctx.pointStyle())("position", ctx.position)("bounds", ctx.container)("inBounds", true);
             }
-        }, directives: [i2__namespace.AngularDraggableDirective, i3__namespace.DefaultStyleDirective, i6__namespace.NgStyle], encapsulation: 2 });
+        }, encapsulation: 2 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxDraggablePointComponent, [{
                 type: i0.Component,
@@ -844,7 +837,7 @@
                 i0__namespace.ɵɵadvance(1);
                 i0__namespace.ɵɵproperty("ngForOf", ctx.filterOptions);
             }
-        }, directives: [i2__namespace$1.MatList, i6__namespace.NgForOf, i2__namespace$1.MatListItem, i4__namespace.MatIcon, i4__namespace$1.DefaultFlexDirective, i6__namespace.NgIf], encapsulation: 2 });
+        }, encapsulation: 2 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxFilterMenuComponent, [{
                 type: i0.Component,
@@ -980,7 +973,7 @@
             if (rf & 2) {
                 i0__namespace.ɵɵproperty("ngIf", ctx.dimensions);
             }
-        }, directives: [i6__namespace.NgIf, i3__namespace.DefaultStyleDirective, i6__namespace.NgStyle], encapsulation: 2 });
+        }, encapsulation: 2 });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxShapeOutlineComponent, [{
                 type: i0.Component,
@@ -1840,7 +1833,7 @@
                 i0__namespace.ɵɵadvance(3);
                 i0__namespace.ɵɵproperty("ngForOf", ctx.displayedButtons);
             }
-        }, directives: [i4__namespace$1.DefaultLayoutAlignDirective, i3__namespace.DefaultStyleDirective, i6__namespace.NgStyle, i6__namespace.NgIf, i4__namespace$1.DefaultLayoutDirective, i6__namespace.NgForOf, NgxShapeOutlineComponent, NgxDraggablePointComponent, i6__namespace.NgSwitch, i6__namespace.NgSwitchCase, i9__namespace.MatButton, i4__namespace.MatIcon], styles: [".editor-actions[_ngcontent-%COMP%]{padding:12px}.editor-actions[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:5px}"] });
+        }, styles: [".editor-actions[_ngcontent-%COMP%]{padding:12px}.editor-actions[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{margin:5px}"] });
     (function () {
         (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxDocScannerComponent, [{
                 type: i0.Component,
@@ -1950,12 +1943,13 @@
         return ImageEditorConfig;
     }());
 
-    var NgxDocumentScannerModule = /** @class */ (function () {
+    var NgxDocumentScannerModule_1;
+    exports.NgxDocumentScannerModule = NgxDocumentScannerModule_1 = /** @class */ (function () {
         function NgxDocumentScannerModule() {
         }
         NgxDocumentScannerModule.forRoot = function (config) {
             return {
-                ngModule: NgxDocumentScannerModule,
+                ngModule: NgxDocumentScannerModule_1,
                 providers: [
                     { provide: i1$1.OpenCvConfigToken, useValue: config },
                 ],
@@ -1963,84 +1957,42 @@
         };
         return NgxDocumentScannerModule;
     }());
-    NgxDocumentScannerModule.ɵfac = function NgxDocumentScannerModule_Factory(t) { return new (t || NgxDocumentScannerModule)(); };
-    NgxDocumentScannerModule.ɵmod = /*@__PURE__*/ i0__namespace.ɵɵdefineNgModule({ type: NgxDocumentScannerModule });
-    NgxDocumentScannerModule.ɵinj = /*@__PURE__*/ i0__namespace.ɵɵdefineInjector({ providers: [
-            i1$1.NgxOpenCVService,
-            LimitsService,
-        ], imports: [[
-                flexLayout.FlexLayoutModule,
-                i9.MatButtonModule,
-                i4.MatIconModule,
-                i1.MatBottomSheetModule,
-                i2$1.MatListModule,
-                i2.AngularDraggableModule,
-                i6.CommonModule,
-                i1$1.NgxOpenCVModule,
-            ], flexLayout.FlexLayoutModule,
-            i9.MatButtonModule,
-            i4.MatIconModule,
-            i1.MatBottomSheetModule,
-            i2$1.MatListModule,
-            i2.AngularDraggableModule] });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(NgxDocumentScannerModule, [{
-                type: i0.NgModule,
-                args: [{
-                        declarations: [
-                            NgxDraggablePointComponent,
-                            NgxFilterMenuComponent,
-                            NgxShapeOutlineComponent,
-                            NgxDocScannerComponent,
-                        ],
-                        imports: [
-                            flexLayout.FlexLayoutModule,
-                            i9.MatButtonModule,
-                            i4.MatIconModule,
-                            i1.MatBottomSheetModule,
-                            i2$1.MatListModule,
-                            i2.AngularDraggableModule,
-                            i6.CommonModule,
-                            i1$1.NgxOpenCVModule,
-                        ],
-                        exports: [
-                            flexLayout.FlexLayoutModule,
-                            i9.MatButtonModule,
-                            i4.MatIconModule,
-                            i1.MatBottomSheetModule,
-                            i2$1.MatListModule,
-                            i2.AngularDraggableModule,
-                            NgxDocScannerComponent,
-                        ],
-                        entryComponents: [
-                            NgxFilterMenuComponent,
-                        ],
-                        providers: [
-                            i1$1.NgxOpenCVService,
-                            LimitsService,
-                        ]
-                    }]
-            }], null, null);
-    })();
-    (function () {
-        (typeof ngJitMode === "undefined" || ngJitMode) && i0__namespace.ɵɵsetNgModuleScope(NgxDocumentScannerModule, { declarations: [NgxDraggablePointComponent,
+    exports.NgxDocumentScannerModule = NgxDocumentScannerModule_1 = __decorate([
+        i0.NgModule({
+            declarations: [
+                NgxDraggablePointComponent,
                 NgxFilterMenuComponent,
                 NgxShapeOutlineComponent,
-                NgxDocScannerComponent], imports: [flexLayout.FlexLayoutModule,
-                i9.MatButtonModule,
-                i4.MatIconModule,
+                NgxDocScannerComponent,
+            ],
+            imports: [
+                flexLayout.FlexLayoutModule,
+                button.MatButtonModule,
+                icon.MatIconModule,
                 i1.MatBottomSheetModule,
-                i2$1.MatListModule,
-                i2.AngularDraggableModule,
-                i6.CommonModule,
-                i1$1.NgxOpenCVModule], exports: [flexLayout.FlexLayoutModule,
-                i9.MatButtonModule,
-                i4.MatIconModule,
+                list.MatListModule,
+                angular2Draggable.AngularDraggableModule,
+                common.CommonModule,
+                i1$1.NgxOpenCVModule,
+            ],
+            exports: [
+                flexLayout.FlexLayoutModule,
+                button.MatButtonModule,
+                icon.MatIconModule,
                 i1.MatBottomSheetModule,
-                i2$1.MatListModule,
-                i2.AngularDraggableModule,
-                NgxDocScannerComponent] });
-    })();
+                list.MatListModule,
+                angular2Draggable.AngularDraggableModule,
+                NgxDocScannerComponent,
+            ],
+            entryComponents: [
+                NgxFilterMenuComponent,
+            ],
+            providers: [
+                i1$1.NgxOpenCVService,
+                LimitsService,
+            ]
+        })
+    ], exports.NgxDocumentScannerModule);
 
     /*
      * Public API Surface of ngx-document-scanner
@@ -2051,7 +2003,6 @@
      */
 
     exports.NgxDocScannerComponent = NgxDocScannerComponent;
-    exports.NgxDocumentScannerModule = NgxDocumentScannerModule;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

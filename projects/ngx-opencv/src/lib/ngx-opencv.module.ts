@@ -9,7 +9,7 @@ import {NgxOpenCVService, OpenCvConfigToken} from './ngx-open-cv.service';
   providers: [NgxOpenCVService]
 })
 export class NgxOpenCVModule {
-  static forRoot(config: OpenCVConfig): ModuleWithProviders<any> {
+  static forRoot(config: OpenCVConfig): ModuleWithProviders<NgxDocumentScannerModule> {
     return {
       ngModule: NgxOpenCVModule,
       providers: [{ provide: OpenCvConfigToken, useValue: config }]
