@@ -1,5 +1,12 @@
 {
   "compileOnSave": false,
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true,
+    "fullTemplateTypeCheck": true, 
+    "enableIvy": true
+  },
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",

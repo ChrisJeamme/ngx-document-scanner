@@ -329,7 +329,7 @@ export class NgxDocScannerComponent implements OnInit {
       setTimeout(async () => {
         await this.detectContours();
         this.processing.emit(false);
-        resolve();
+        resolve(true);
       }, 15);
     });
   }
@@ -361,7 +361,7 @@ export class NgxDocScannerComponent implements OnInit {
         this.imageDimensions.width = this.editedImage.width;
         this.imageDimensions.height = this.editedImage.height;
         this.setPreviewPaneDimensions(this.editedImage);
-        resolve();
+        resolve(true);
       };
       img.src = imageSrc;
     });
@@ -417,7 +417,7 @@ export class NgxDocScannerComponent implements OnInit {
         this.limitsService.rotateClockwise(previewResizeRatios, initialPreviewDimensions, initialPositions);
         this.showPreview().then(() => {
           this.processing.emit(false);
-          resolve();
+          resolve(true);
         });
       }, 30);
     });
@@ -644,7 +644,7 @@ export class NgxDocScannerComponent implements OnInit {
       cv.imshow(this.previewCanvas.nativeElement, dst);
       src.delete();
       dst.delete();
-      resolve();
+      resolve(true);
     });
   }
 
